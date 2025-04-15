@@ -2,7 +2,7 @@ import {motion } from "motion/react"
 import { useEffect, useState } from "react";
 
 const links = [
-  {title: 'Phone', path: '' },
+  {title: 'Phone', path: 'tel:254778478242' },
   {title: 'Email', path: 'mailto:info@thecodefactory.tech' },
   {title: 'Whatsapp', path: '' },
 ]
@@ -16,17 +16,17 @@ const Contact = () => {
 
   return (
     <>
-      <div className="px-6 mt-8 lg:px-12">
-       <div className="flex flex-col gap-4 lg:w-[50%]">
+      <div className="px-6 pt-8 lg:px-12 ">
+       <div className="flex flex-col gap-4 lg:w-[50%] ">
        <p className="font-primary font-bold text-primary text-5xl upper lg:text-7xl">Contact</p>
-       <p className="font-semibold text-gray text-base lg:text-lg">We know—this is the part where you “reach out.” Whether it’s a question, a quote, or a late-night existential crisis about your digital presence, go ahead. Hit us up. Just don’t send “hi” and ghost. We’re not your ex.</p>
+       <p className="font-semibold text-gray text-lg lg:text-xl">We know—this is the part where you “reach out.” Whether it’s a question, a quote, or a late-night existential crisis about your digital presence, go ahead. Hit us up. Just don’t send “hi” and ghost.</p>
        </div>
        {/* <div className="font-primary flex flex-col gap-4 my-12">
         <a href="" className="text-4xl uppercase font-bold text-primary ">Phone</a>
         <a href="" className="text-4xl uppercase font-bold text-primary ">Email</a>
         <a href="" className="text-4xl uppercase font-bold text-primary ">Whatsapp</a>
        </div> */}
-       <div className="font-primary flex flex-col gap-4 my-12 perspective-[1000px]">
+       <div className="font-primary flex flex-col gap-4 py-12 perspective-[1000px] ">
       {links.map((link, index) => (
         <motion.a
           key={index}

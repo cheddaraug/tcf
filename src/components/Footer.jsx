@@ -36,10 +36,10 @@ const Footer = () => {
             src={fullLogo}
             alt=""
             className="mt-24 lg:mt-40"
-            title="Photo by Murad Swaleh on Unsplash"
           />
         </div>
-        <img src={footerImage} alt="" width={"100%"} />
+        <img src={footerImage} alt="" width={"100%"} 
+            title="Photo by Murad Swaleh on Unsplash"/>
       </div>
     </>
   );
