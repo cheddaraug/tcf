@@ -7,6 +7,7 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Process from './pages/Process'
+import NotFound from './pages/NotFound'
 
 const App = () => { 
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="services" element={<Services />} />
           <Route path="process" element={<Process />} />
           <Route path="contact" element={<Contact />} />
+          <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
