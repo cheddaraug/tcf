@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Button from "../components/Button";
 import GradientText from "../components/GradientText";
 import ShinyText from "../components/ShinyTExt";
@@ -38,6 +39,11 @@ const stats = [
 ];
 
 const About = () => {
+
+  useEffect(() => {
+    document.title = "About Us - The Code Factory";
+  }, [])
+
   return (
     <>
       <div className="">

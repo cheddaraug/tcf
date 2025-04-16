@@ -35,11 +35,11 @@ const Footer = () => {
           <img
             src={fullLogo}
             alt=""
-            className="mt-24 lg:mt-40"
+            className="mt-24 lg:mt-32 mx-auto"
           />
         </div>
         <img src={footerImage} alt="" width={"100%"} 
-            title="Photo by Murad Swaleh on Unsplash"/>
+            title="Photo by Murad Swaleh on Unsplash" />
       </div>
     </>
   );
