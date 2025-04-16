@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Process from './pages/Process'
 import NotFound from './pages/NotFound'
+import Legal from './pages/Legal'
 
 const App = () => { 
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="services" element={<Services />} />
           <Route path="process" element={<Process />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="legal" element={<Legal />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>

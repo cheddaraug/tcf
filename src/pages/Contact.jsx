@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const links = [
   {title: 'Phone', path: 'tel:254778478242' },
   {title: 'Email', path: 'mailto:info@thecodefactory.tech' },
-  {title: 'Whatsapp', path: '' },
+  {title: 'Whatsapp', path: 'https://wa.me/254778478242?.' },
 ]
 
 const Contact = () => {
