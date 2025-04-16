@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Button from "../components/Button";
 import GradientText from "../components/GradientText";
-import ShinyText from "../components/ShinyTExt";
 import StatsCard from "../components/StatsCard";
 
 const stats = [
