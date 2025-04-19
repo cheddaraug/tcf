@@ -9,10 +9,12 @@ import Contact from './pages/Contact'
 import Process from './pages/Process'
 import NotFound from './pages/NotFound'
 import Legal from './pages/Legal'
+import ScrollToTop from './components/ScrollTop'
 
 const App = () => { 
   return (
     <BrowserRouter >
+    <ScrollToTop />
      <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
