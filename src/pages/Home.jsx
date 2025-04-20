@@ -276,7 +276,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex mt-6 lg:mt-12 flex-col lg:flex-row flex-wrap lg:flex-nowrap ">
+          <div className="flex mt-6 lg:mt-12 flex-col lg:flex-row flex-wrap lg:flex-nowrap gap-4 lg:gap-0 px-4 lg:px-0">
             {companies.map((company, index) => <WhatWeDoCard image={company.image} key={index} title={company.title} />)}
             
           </div>
