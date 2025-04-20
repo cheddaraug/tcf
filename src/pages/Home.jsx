@@ -188,7 +188,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center  text-center text-4xl  lg:text-6xl px-6 lg:px-12 pt-12  py-18  pb-8 h-[50vh] lg:h-[80vh]"  id="explore">
+        <div className="flex flex-col justify-center items-center  text-center text-4xl  lg:text-6xl px-6 lg:px-12 pt-12 py-18 pb-8 h-[50vh] lg:h-[80vh]"  id="explore">
           <div className="flex gap-2 mb-6">
             <div className="bg-light-yellow text-xs lg:text-base text-primary rounded-full px-3 py-1">Trusted by top brands</div>
             <div className="bg-light-yellow text-xs lg:text-base text-primary rounded-full px-3 py-1">Creating digital success stories</div>
@@ -198,7 +198,7 @@ const Home = () => {
         </div>
 
         <div
-          className="px-6 lg:px-12 pb-8 bg-white flex  lg:mt-18"
+          className="px-6 lg:px-12 pb-8 bg-white flex mt-12 lg:mt-18" 
          
         >
           <div className="lg:w-[50%] hidden lg:block"></div>
