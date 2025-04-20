@@ -10,6 +10,11 @@
   --font-primary: "Bricolage Grotesque", sans-serif
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @theme {
   --color-tan: #f6f2e2;
   --color-primary: #ed5726;
@@ -18,7 +23,7 @@
   --color-accent: #6f53ca;
   --color-brown: #6c6354;
   --color-gray: #9b9082;
-  --color-dark-brown: #6c6354;
+  --color-dark-brown: #413c34;
   --color-light-yellow: #f8f0d5;
   --color-dark-primary: #dd5021;
   --color-dark-tan: #eee1c1;

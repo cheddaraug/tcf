@@ -20,7 +20,7 @@ const Header = () => {
       <header className="px-4 lg:px-10 bg-tan py-3 fixed w-full z-50">
         <nav className="flex font-primary items-center justify-between">
           {/* Logo */}
-          <div className="w-[7rem]">
+          <div className="lg:w-[6rem] w-[5rem]" >
             <Link to="/">
               <img src={logo} alt="the code factory logo" />
             </Link>

@@ -8,7 +8,7 @@ const MainLayout = () => {
       {/* !  Might break something - sticky footer*/}
       <div className="min-h-screen flex flex-col justify-between">
         <Header />
-        <main className="font-secondary pt-21 ">
+        <main className="font-secondary lg:pt-18  pt-16">
           <Outlet />
         </main>
         <Footer />
