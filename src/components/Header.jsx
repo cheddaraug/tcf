@@ -1,23 +1,23 @@
-import { Link } from "react-router-dom"
-import logo from "../assets/images/logo-horizontal.svg"
-import Button from "./Button"
-import LinkComponent from "./LinkComponent"
-import { useState } from "react"
-import { motion, AnimatePresence } from "motion/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline" // Importing icons from Heroicons
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logo-horizontal.svg";
+import Button from "./Button";
+import LinkComponent from "./LinkComponent";
+import { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"; // Importing icons from Heroicons
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const links = [
     { title: "About", to: "/about" },
     { title: "Services", to: "/services" },
     { title: "Process", to: "/process" },
-  ]
+  ];
 
   return (
     <>
-      <header className="px-4 lg:px-10 bg-tan py-4 fixed w-full z-50">
+      <header className="px-4 lg:px-10 bg-tan py-3 fixed w-full z-50">
         <nav className="flex font-primary items-center justify-between">
           {/* Logo */}
           <div className="w-[7rem]">
@@ -83,27 +83,23 @@ const Header = () => {
                   onClick={() => setIsOpen(false)} // Close on link click
                 >
                   {link.title}
-                  <motion.span
-                    className="block h-[2px] bg-white mt-1 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
-                  />
+                  <motion.span className="block h-[2px] bg-white mt-1 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </Link>
               ))}
-             <Link
-                  to={"contact"}
-                  className="relative group uppercase font-primary"
-                  onClick={() => setIsOpen(false)} // Close on link click
-                >
-                  Contact
-                  <motion.span
-                    className="block h-[2px] bg-white mt-1 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
-                  />
-                </Link> 
+              <Link
+                to={"contact"}
+                className="relative group uppercase font-primary"
+                onClick={() => setIsOpen(false)} // Close on link click
+              >
+                Contact
+                <motion.span className="block h-[2px] bg-white mt-1 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+              </Link>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

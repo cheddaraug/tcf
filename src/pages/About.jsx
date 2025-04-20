@@ -38,16 +38,15 @@ const stats = [
 ];
 
 const About = () => {
-
   useEffect(() => {
     document.title = "About Us - The Code Factory";
-  }, [])
+  }, []);
 
   return (
     <>
       <div className="">
         <div className=" px-6 lg:px-12 pt-12 pb-8 bg-gradient-to-b from-tan to-primary">
-          <p className="font-primary font-bold text-primary text-5xl lg:w-[80%] lg:text-7xl">
+          <p className="font-primary font-bold text-primary text-5xl lg:w-[80%] lg:text-8xl lg:mb-24">
             The Code Factory - Where brands come in raw and leave dangerously
             polished.
           </p>
@@ -121,7 +120,7 @@ const About = () => {
           <p className="font-primary font-bold text-3xl lg:text-5xl text-white ">
             This is where you scroll away… or reach out.
           </p>
-          <Button title="Let’s Build Something" to="/contact" />
+          <Button title="Let’s Build Something" to="/contact" style={{padding: '', fontSize: "1.25rem"}}/>
         </div>
       </div>
     </>

@@ -1,9 +1,14 @@
 import React, { useEffect } from "react";
 import BouncingArrowDown from "../components/BouncingArrowDown";
 import Button from "../components/Button";
+import GradientText from "../components/GradientText";
+
+
 import CircularText from "../components/CircularText";
 import logoOutlineWhite from "../assets/images/tcf-outline-white.svg";
 import CompaniesCard from "../components/CompaniesCard";
+import heroNoiseImage from "../assets/images/hero-noise-image.svg";
+
 
 import {
   RocketLaunchIcon,
@@ -103,46 +108,55 @@ const Home = () => {
   return (
     <>
       <div>
-        <div className=" px-6 lg:px-12 pt-12 pb-8 bg-tan">
-          <div className=" lg:h-[70v] flex lg:flex-col-reverse items-start justify-start flex-col lg:gap-12">
-            <div className="mb-24">
-              <p className="font-primary font-bold text-primary text-6xl lg:text-9xl ">
-                Your Next Website? Already Better Than Theirs.
-              </p>
+        <div
+          className="h-[95vh]"
+          style={{
+            backgroundImage: `url(${heroNoiseImage})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+          <div className=" px-6 lg:px-12 flex flex-col justify-end h-[90vh]">
+            <div className="flex flex-col gap-2 lg:w-[60%]">
+            <h2 className="font-bold text-whifte text-4xl lg:text-6xl text-primary">Your Brand Deserves Better Than a Template</h2>
+            <p className="font-secondary text-lg lg:text-xl text-dark-brown">We don’t just build websites—we engineer experiences. Crafted from strategy, sharpened with design, and powered by clean code, every site we ship is a digital flagship. If your brand’s future lives online, we’re the ones who’ll build it a home worth showing off.</p>
+            </div>
+            <div className="flex justify-between items-end mt-6">
+              <Button title='Get Started' to={'/contact'} style={{fontSize: '1.25rem ', }}/>
+              <div className="lg:flex items-end lg:gap-4 hidden lg:block">
+                <p className="border-b-2  font-primary text-white text-lg lg:text-xl ">Explore</p>
+                <BouncingArrowDown color={'white'}/>
+              </div>
             </div>
 
-            <div className="flex justify-end mb-12 lg:mb-0 w-full">
-              <p className="text-left lg:w-[40%] font-medium text-dark-brown text-lg  font-primary">
-                We specialize in building high-performance digital solutions
-                tailored to your business needs. Our focus is on speed,
-                efficiency, and delivering visually appealing, user-centric
-                websites that help your brand achieve its goal
-              </p>
+            <div className="lg:hidden ">
+            <BouncingArrowDown color={'white'} />
             </div>
           </div>
-          <BouncingArrowDown />
+        </div>
 
-          <div className="bg-tan pt-12 flex flex-col gap-4 lg:mt-24 mt-6 text-center">
-            <p className="text-dark-brown font-primary text-xl font-semibold lg:text-2xl">
-              What We Do
-            </p>
-            <p className="font-primary font-bold text-brown text-3xl lg:text-5xl ">
-              At The Code Factory, we don’t just build websites—we engineer
-              digital experiences that get results. From sleek designs to
-              seamless functionality, everything we create is tailored to help
-              your business stand out, scale up, and stay ahead..
-            </p>
-          </div>
+        <div className="px-6 lg:px-12 pt-12 pb-8 bg-tan"></div>
 
-          <div className="bg-tan pt-12 flex flex-col gap-4 lg:mt-12 mt-6 text-center">
-            <p className="text-dark-brown font-primary text-xl font-semibold lg:text-2xl">
-              Companies We Serve
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              {companies.map((company, index) => (
-                <CompaniesCard key={index} company={company} />
-              ))}
-            </div>
+        <div className="bg-tan pt-12 flex flex-col gap-4 lg:mt-24 mt-6 text-center">
+          <p className="text-dark-brown font-primary text-xl font-semibold lg:text-2xl">
+            What We Do
+          </p>
+          <p className="font-primary font-bold text-brown text-3xl lg:text-5xl text-brown">
+            At The Code Factory, we don’t just build websites—we engineer
+            digital experiences that get results. From sleek designs to seamless
+            functionality, everything we create is tailored to help your
+            business stand out, scale up, and stay ahead..
+          </p>
+        </div>
+
+        <div className="bg-tan pt-12 flex flex-col gap-4 lg:mt-12 mt-6 text-center">
+          <p className="text-dark-brown font-primary text-xl font-semibold lg:text-2xl">
+            Companies We Serve
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            {companies.map((company, index) => (
+              <CompaniesCard key={index} company={company} />
+            ))}
           </div>
         </div>
 
@@ -178,7 +192,7 @@ const Home = () => {
 
         <div className="text-center mt-12 flex flex-col gap-4 pb-12 bg-gradient-to-b from-white to-tan px-6 lg:px-12 py-12 lg:py-24">
           <p className="font-primary font-bold text-3xl lg:text-5xl text-dark-brown ">
-          You’re Here. Your Competition Isn’t. Let’s Keep It That Way.
+            You’re Here. Your Competition Isn’t. Let’s Keep It That Way.
           </p>
           <Button title="Get Started" to="/contact" />
         </div>

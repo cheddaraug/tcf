@@ -32,14 +32,14 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <img
-            src={fullLogo}
-            alt=""
-            className="mt-24 lg:mt-32 mx-auto"
-          />
+          <img src={fullLogo} alt="" className="mt-18 lg:mt-26 mx-auto" />
         </div>
-        <img src={footerImage} alt="" width={"100%"} 
-            title="Photo by Murad Swaleh on Unsplash" />
+        <img
+          src={footerImage}
+          alt=""
+          width={"100%"}
+          title="Photo by Murad Swaleh on Unsplash"
+        />
       </div>
     </>
   );

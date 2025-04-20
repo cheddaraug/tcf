@@ -1,11 +1,11 @@
 import React from "react";
 
-const BouncingArrowDown = () => {
+const BouncingArrowDown = ({color}) => {
   return (
     <>
       <div className="flex justify-center mt-8">
         <svg
-          className="animate-bounce w-6 h-6 text-primary"
+          className={`animate-bounce w-6 h-6 text-${color}`}
           fill="none"
           stroke="currentColor"
           strokeWidth={2}

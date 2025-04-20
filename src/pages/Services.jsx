@@ -119,9 +119,11 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12 flex flex-col gap-4 pb-12 bg-gradient-to-b from-white to-tan px-6 lg:px-12 py-12 lg:py-24" >
-          <p className="font-primary font-bold text-3xl lg:text-5xl text-dark-brown ">Still reading? Nice. Let’s make something.</p>
-          <Button title="Claim Your Spot Online" to='/contact' />
+        <div className="text-center mt-12 flex flex-col gap-4 pb-12 bg-gradient-to-b from-white to-tan px-6 lg:px-12 py-12 lg:py-24">
+          <p className="font-primary font-bold text-3xl lg:text-5xl text-dark-brown ">
+            Still reading? Nice. Let’s make something.
+          </p>
+          <Button title="Claim Your Spot Online" to="/contact"  style={{padding: '', fontSize: "1.25rem"}}/>
         </div>
       </div>
     </>
