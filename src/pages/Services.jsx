@@ -73,9 +73,7 @@ const Services = () => {
             Everything Your Business Needs to Go Digital—Without the Guesswork
             or the Gimmicks.
           </h2>
-          <div className="flex  mt-6 lg:mt-24 gap-12 items-start justify-between ">
-            <img src={logoOutline} alt="" className="hidden lg:block pl-12 " />
-            <div className="flex flex-wrap gap-8 lg:mx-auto   justify-end">
+            <div className="flex flex-wrap gap-8 lg:mx-auto w-full">
               {services.map((service, index) => (
                 <Card
                   image={service.image}
@@ -84,7 +82,6 @@ const Services = () => {
                   key={index}
                 />
               ))}
-            </div>
           </div>
         </div>
 

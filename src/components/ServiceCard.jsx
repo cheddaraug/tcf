@@ -26,7 +26,7 @@ const ServiceCard = ({ title, desc, image, setHovered, index, hovered }) => {
           </svg>
         </div>
 
-        <p className="text-lg">{title} </p>
+        <p className="text-lg font-semibold">{title} </p>
       </div>
     </>
   );
