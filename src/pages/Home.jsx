@@ -344,7 +344,7 @@ const Home = () => {
             </p>
           </div>
 
-            <div className="mt-12 flex flex-col gap-4">
+            <div className="mt-12 flex flex-col gap-4 lg:px-4">
            {faqs.map((faq, index )=> <FAQCard key={index} title={faq.title} desc={faq.desc} index={index} />)}
             </div>
 

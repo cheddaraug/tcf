@@ -22,7 +22,7 @@ const Header = () => {
           {/* Logo */}
           <div className="lg:w-[6rem] w-[5rem]" >
             <Link to="/">
-              <img src={logo} alt="the code factory logo" />
+              <img src={logo} alt="the code factory logo" loading="lazy"/>
             </Link>
           </div>
 

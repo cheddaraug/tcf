@@ -1,5 +1,5 @@
 import LinkComponent from "./LinkComponent";
-import footerImage from "../assets/images/footer-image.svg";
+import footerImage from "../assets/images/footer-image.jpg";
 import fullLogo from "../assets/images/full-logo-horizontal.svg";
 
 const links = [
@@ -32,13 +32,14 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <img src={fullLogo} alt="" className="mt-18 lg:mt-26 mx-auto" />
+          <img src={fullLogo} alt="" className="mt-18 lg:mt-26 mx-auto" loading="lazy"/>
         </div>
         <img
           src={footerImage}
           alt=""
           width={"100%"}
           title="Photo by Murad Swaleh on Unsplash"
+          loading="lazy"
         />
       </div>
     </>
