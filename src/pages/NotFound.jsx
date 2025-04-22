@@ -16,7 +16,11 @@ const NotFound = () => {
           It’s like a developer totally forgot to make this. We’ll add it to the
           growing list of regrets.
         </p>
-        <Button title="Abort Mission" to={"/"} style={{padding: '', fontSize: "1.3rem"}} />
+        <Button
+          title="Abort Mission"
+          to={"/"}
+          style={{ padding: "", fontSize: "1.3rem" }}
+        />
       </div>
     </>
   );

@@ -73,15 +73,15 @@ const Services = () => {
             Everything Your Business Needs to Go Digital—Without the Guesswork
             or the Gimmicks.
           </h2>
-            <div className="flex flex-wrap gap-8 lg:mx-auto w-full">
-              {services.map((service, index) => (
-                <Card
-                  image={service.image}
-                  title={service.title}
-                  desc={service.desc}
-                  key={index}
-                />
-              ))}
+          <div className="flex flex-wrap gap-8 lg:mx-auto w-full">
+            {services.map((service, index) => (
+              <Card
+                image={service.image}
+                title={service.title}
+                desc={service.desc}
+                key={index}
+              />
+            ))}
           </div>
         </div>
 
@@ -120,7 +120,11 @@ const Services = () => {
           <p className="font-primary font-bold text-3xl lg:text-5xl text-dark-brown ">
             Still reading? Nice. Let’s make something.
           </p>
-          <Button title="Claim Your Spot Online" to="/contact"  style={{padding: '', fontSize: "1.25rem"}}/>
+          <Button
+            title="Claim Your Spot Online"
+            to="/contact"
+            style={{ padding: "", fontSize: "1.25rem" }}
+          />
         </div>
       </div>
     </>

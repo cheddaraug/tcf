@@ -1,6 +1,6 @@
 import React from "react";
 
-const BouncingArrowDown = ({color}) => {
+const BouncingArrowDown = ({ color }) => {
   return (
     <>
       <div className="flex justify-center mt-8">

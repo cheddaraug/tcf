@@ -32,7 +32,12 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <img src={fullLogo} alt="" className="mt-18 lg:mt-26 mx-auto" loading="lazy"/>
+          <img
+            src={fullLogo}
+            alt=""
+            className="mt-18 lg:mt-26 mx-auto"
+            loading="lazy"
+          />
         </div>
         <img
           src={footerImage}

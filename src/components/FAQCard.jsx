@@ -7,12 +7,14 @@ const FAQCard = ({ title, desc }) => {
   return (
     <div
       className="bg-light-yellow px-6 py-4 rounded-lg cursor-pointer transition-all duration-300"
-      onClick={() => setIsOpen(prev => !prev)}
+      onClick={() => setIsOpen((prev) => !prev)}
       aria-expanded={isOpen}
     >
       <div className="flex justify-between items-start">
         <h2 className="font-semibold text-xl text-dark-brown">{title}</h2>
-        <div className={`transform transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`}>
+        <div
+          className={`transform transition-transform duration-300 ${isOpen ? "rotate-45" : "rotate-0"}`}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

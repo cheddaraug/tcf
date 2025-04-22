@@ -17,7 +17,11 @@ const Legal = () => {
             about too much sarcasm and not enough compliance. We’ll be back once
             the lawyers calm down.
           </p>
-          <Button title="Escape the Legal Abyss" to={"/"} style={{padding: '', fontSize: "1.3rem"}}/>
+          <Button
+            title="Escape the Legal Abyss"
+            to={"/"}
+            style={{ padding: "", fontSize: "1.3rem" }}
+          />
         </div>
       </div>
     </>

@@ -12,7 +12,11 @@ const ProcessCard = ({ processData, index }) => {
         alt=""
         className="border-2 rounded-xl border-primary lg:w-[40%] lg:h-[30%]"
       /> */}
-      <div className="lg:w-[60%] flex lg:justify-center"><p className="font-primary font-bold lg:text-[20rem] text-primary text-2xl">{index + 1}</p></div>
+      <div className="lg:w-[60%] flex lg:justify-center">
+        <p className="font-primary font-bold lg:text-[20rem] text-primary text-2xl">
+          {index + 1}
+        </p>
+      </div>
       <div>
         <p className="font-primary font-bold text-dark-brown text-3xl lg:text-4xl">
           {title}

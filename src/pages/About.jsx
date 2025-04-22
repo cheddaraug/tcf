@@ -120,7 +120,11 @@ const About = () => {
           <p className="font-primary font-bold text-3xl lg:text-5xl text-white ">
             This is where you scroll away… or reach out.
           </p>
-          <Button title="Let’s Build Something" to="/contact" style={{padding: '', fontSize: "1.25rem"}}/>
+          <Button
+            title="Let’s Build Something"
+            to="/contact"
+            style={{ padding: "", fontSize: "1.25rem" }}
+          />
         </div>
       </div>
     </>

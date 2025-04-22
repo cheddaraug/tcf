@@ -180,7 +180,11 @@ const Process = () => {
           <p className="font-primary font-bold text-3xl lg:text-5xl text-dark-brown ">
             Ready to see this process in action?
           </p>
-          <Button title="Get Started" to="/contact" style={{padding: '', fontSize: "1.25rem"}}/>
+          <Button
+            title="Get Started"
+            to="/contact"
+            style={{ padding: "", fontSize: "1.25rem" }}
+          />
         </div>
       </div>
     </>

@@ -119,39 +119,38 @@ const colors = [
 
 const faqs = [
   {
-    title: 'How long does a typical project take?',
-    desc: 'Project timelines depend on the scope and complexity of the work. A standard website usually takes 2–4 weeks, while larger or custom projects may take longer. Clear communication and timely feedback help keep everything on track.'
+    title: "How long does a typical project take?",
+    desc: "Project timelines depend on the scope and complexity of the work. A standard website usually takes 2–4 weeks, while larger or custom projects may take longer. Clear communication and timely feedback help keep everything on track.",
   },
   {
-    title: 'What do you need to get started?',
-    desc: 'We’ll need a brief overview of your goals, any existing assets (like logos, content, or brand guidelines), and a quick onboarding call to clarify expectations. From there, we’ll handle the roadmap and walk you through every step.'
+    title: "What do you need to get started?",
+    desc: "We’ll need a brief overview of your goals, any existing assets (like logos, content, or brand guidelines), and a quick onboarding call to clarify expectations. From there, we’ll handle the roadmap and walk you through every step.",
   },
   {
-    title: 'Do you offer ongoing support?',
-    desc: 'Yes. We provide post-launch support, routine maintenance, and content updates to ensure your site stays secure, fast, and up-to-date. Ongoing support can be one-time, monthly, or part of a broader service package.'
+    title: "Do you offer ongoing support?",
+    desc: "Yes. We provide post-launch support, routine maintenance, and content updates to ensure your site stays secure, fast, and up-to-date. Ongoing support can be one-time, monthly, or part of a broader service package.",
   },
   {
-    title: 'Can you work with my existing website or system?',
-    desc: 'Absolutely. Whether it’s a small update, full redesign, or integration with third-party systems, we can work with your existing infrastructure and recommend the best path forward.'
+    title: "Can you work with my existing website or system?",
+    desc: "Absolutely. Whether it’s a small update, full redesign, or integration with third-party systems, we can work with your existing infrastructure and recommend the best path forward.",
   },
   {
-    title: 'What kind of businesses do you work with?',
-    desc: 'We collaborate with startups, small and medium-sized businesses, enterprise teams, schools, nonprofits, and creative professionals. If you have a digital vision, we’re here to bring it to life—regardless of your size or industry.'
+    title: "What kind of businesses do you work with?",
+    desc: "We collaborate with startups, small and medium-sized businesses, enterprise teams, schools, nonprofits, and creative professionals. If you have a digital vision, we’re here to bring it to life—regardless of your size or industry.",
   },
   {
-    title: 'Do you build eCommerce sites?',
-    desc: 'Yes. We build eCommerce solutions that are fast, secure, and designed to convert—complete with product listings, payment gateways (like M-Pesa, PayPal, and Stripe), cart functionality, and order management tools.'
+    title: "Do you build eCommerce sites?",
+    desc: "Yes. We build eCommerce solutions that are fast, secure, and designed to convert—complete with product listings, payment gateways (like M-Pesa, PayPal, and Stripe), cart functionality, and order management tools.",
   },
   {
-    title: 'Is SEO included in the build?',
-    desc: 'Every site is built with on-page SEO best practices in mind—from clean code and mobile responsiveness to optimized meta tags and site speed. For more advanced SEO strategy, we offer optional add-ons or partner recommendations.'
+    title: "Is SEO included in the build?",
+    desc: "Every site is built with on-page SEO best practices in mind—from clean code and mobile responsiveness to optimized meta tags and site speed. For more advanced SEO strategy, we offer optional add-ons or partner recommendations.",
   },
   {
-    title: 'How is pricing structured?',
-    desc: 'Pricing is based on the size, complexity, and features of your project. After an initial consultation, we’ll provide a custom quote outlining the deliverables, timeline, and cost breakdown—no surprises, no hidden fees.'
-  }
+    title: "How is pricing structured?",
+    desc: "Pricing is based on the size, complexity, and features of your project. After an initial consultation, we’ll provide a custom quote outlining the deliverables, timeline, and cost breakdown—no surprises, no hidden fees.",
+  },
 ];
-
 
 const Home = () => {
   const [isHovered, setIsHovered] = useState(0);
@@ -344,10 +343,16 @@ const Home = () => {
             </p>
           </div>
 
-            <div className="mt-12 flex flex-col gap-4 lg:px-4">
-           {faqs.map((faq, index )=> <FAQCard key={index} title={faq.title} desc={faq.desc} index={index} />)}
-            </div>
-
+          <div className="mt-12 flex flex-col gap-4 lg:px-4">
+            {faqs.map((faq, index) => (
+              <FAQCard
+                key={index}
+                title={faq.title}
+                desc={faq.desc}
+                index={index}
+              />
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-12 flex flex-col gap-4 pb-12 bg-gradient-to-b from-white to-tan px-6 lg:px-12 py-12 lg:py-24">
